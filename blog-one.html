@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>blog-one</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <h1>Jayson Hicarte</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="blog-one.html">BLOG 1</a></li>
+          <li><a href="blog-two.html">BLOG 2</a></li>
+          <li><a href="blog-three.html">BLOG 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <hr />
+    <br />
+
+    <!-- CONTENT -->
+    <article>
+      <header>
+        <h2>Learning Cascading Style Sheet(CSS)</h2>
+        <p>By <strong>Jayson Hicarte</strong></p>
+        <br />
+      </header>
+
+      <img src="images/css.jpg" width="500" height="350" alt="css image" />
+      <br />
+      <br />
+
+      <h3>What is CSS?</h3>
+
+      <p>
+        <strong>Cascading Style Sheets (CSS)</strong> is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML
+        (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+      </p>
+
+      <p>
+        CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility;[further explanation needed]
+        provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file,
+        which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its
+        formatting.
+      </p>
+
+      <p>
+        The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates
+        a free CSS validation service for CSS documents.
+      </p>
+
+      <h3>Style Sheet</h3>
+
+      <p>
+        A style sheet consists of a list of rules. Each rule or rule-set consists of one or more selectors, and a declaration block.
+        <br /><br />Selector
+      </p>
+
+      <p>In CSS, selectors declare which part of the markup a style applies to by matching tags and attributes in the markup itself.</p>
+
+      <h3>Selector types</h3>
+
+      <p>Selectors may apply to the following:</p>
+
+      <ul>
+        <li>all elements of a specific type, e.g. the second-level header h2</li>
+        <li>elements specified by attribute, in particular:</li>
+        <li>id: an identifier unique within the document, denote in the selector language by a hash prefix e.g. #id</li>
+        <li>
+          class: an identifier that can annotate multiple elements in a documents, denote by a dot prefix e.g. .classname( the phrase "CSS class", although sometimes used, is a misnomer, as element
+          classes-spicified with the HTML class attribute-is markup feature that is distinct from browser' CSS subsystem and the related W3C/WHATWG standards work on document style; see RDF and
+          microformats for the origins of the"class" system of the Web content model)
+        </li>
+        <li>elements depending on how they are place relative to others in the document tree</li>
+        <li>
+          classes and ID's are case-sensitive, start with letters and can include alphanumeric characters, hyphens, and underscores. A class may apply to any number of instances of any elements. An ID
+          may only be applied to a single element.
+        </li>
+      </ul>
+
+      <h3>Pseudo-classes</h3>
+      <p>
+        Pseudo-classes are used in CSS selectors to permit formatting based on information that is not contained in the document tree.
+
+        <br /><br />One example of a widelyu used pseudo-class is :hover, which identifies content only when the user "points to" the visible element, usually by holding the mouse cursor over it. It
+        is appended to a selector as in a :hover or #elementid:hover.
+
+        <br /><br />A pseudo-class classified document elements such as :link or :visited, where a pseudo-element makes a selection that may consist of partial elements such as ::first-line or
+        ::first-letter[6] Note the distinction between the double-colon notation used for pseudo-elements and the single-colon notation used for pseudo-classes.
+      </p>
+
+      <h3>Combinators</h3>
+      <p>
+        Multiple simple selectors may be joined using combinators to specify elements by location, element type, id, class, or any combination thereof. The order of the selectors is important. For
+        example, div .myClass {color: red;} applies to all elements of class myClass that are inside div elements, whereas .myClass div {color: red;} applies to all div elements that are inside
+        elements of class myClass. This is not to be confused with concatenated identifiers such as div.myClass {color: red;} which applies to div elements of class myClass.
+      </p>
+
+      <h3>Declaration Block</h3>
+
+      <p>A declaration block consists of a pair of braces ({}) enclosing a semicolon-separated list of declarations.</p>
+
+      <h3>Declaration</h3>
+      <p>Each declaration itself consists of a property, a colon (:), and a value. Optional white-space may be around the declaration block, declarations, colons, and semi-colons for readability.</p>
+
+      <h3>Properties</h3>
+      <p>
+        Properties are specified in the CSS standard. Each property has a set of possible values. Some properties can affect any type of element, and others apply only to particular groups of
+        elements.
+      </p>
+
+      <h3>Values</h3>
+
+      <p>
+        Values may be keywords, such as "center" or "inherit", or numerical values, such as 200px (200 pixels), 50vw (50 percent of the viewport width) or 80% (80 percent of the parent element's
+        width).
+
+        <br /><br />Color values can be specified with keywords (e.g. "red"), hexadecimal values (e.g. #FF0000, also abbreviated as #F00), RGB values on a 0 to 255 scale (e.g. rgb(255, 0, 0)), RGBA
+        values that specify both color and alpha transparency (e.g. rgba(255, 0, 0, 0.8)), or HSL or HSLA values (e.g. hsl(000, 100%, 50%), hsla(000, 100%, 50%, 80%)).
+
+        <br /><br /><br />Non-zero numeric values representing linear measures must include a length unit, which is either an alphabetic code or abbreviation, as in 200px or 50vw; or a percentage
+        sign, as in 80%. Some units – cm (centimetre); in (inch); mm (millimetre); pc (pica); and pt (point) – are absolute, which means that the rendered dimension does not depend upon the structure
+        of the page; others – em (em); ex (ex) and px (pixel)[clarification needed] – are relative, which means that factors such as the font size of a parent element can affect the rendered
+        measurement. These eight units were a feature of CSS 1[14] and retained in all subsequent revisions. The proposed CSS Values and Units Module Level 3 will, if adopted as a W3C Recommendation,
+        provide seven further length units: ch; Q; rem; vh; vmax; vmin; and vw.
+      </p>
+    </article>
+    <br />
+    <hr />
+    <br />
+
+    <!-- ASIDE -->
+    <aside>
+      <h4>Related posts</h4>
+      <ul>
+        <li>
+          <h4><a href="blog-one.html">What is CSS?</a></h4>
+          <p>By Jayson Hicarte</p>
+        </li>
+        <li>
+          <h4><a href="blog-two.html">What is Javascript?</a></h4>
+          <p>By Jayson Hicarte</p>
+        </li>
+        <li>
+          <h4>
+            <a href="blog-three.html">What is a Web Framework?</a>
+          </h4>
+          <p>By Jayson Hicarte</p>
+        </li>
+      </ul>
+    </aside>
+    <br />
+    <hr />
+    <br />
+
+    <!-- FOOTER -->
+    <footer>Copyright &copy; 2030 by Jayson Hicarte All Rights Reserved.</footer>
+  </body>
+</html>
